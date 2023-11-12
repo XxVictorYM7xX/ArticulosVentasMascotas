@@ -1,21 +1,14 @@
-<%- include('../components/layout/head.ejs', {title: 'Artículos para mascotas'}) -%>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Datos</title>
+</head>
+<body>
+  <h1>Hola mundo</h1>
+  <p>Nombre: <%= nombre %></p>
+  <p>Apellido: <%= apellido %></p>
+  <p>Cédula: <%= cedula %></p>
+  <p>Sección: <%= seccion %></p>
+</body>
+</html>
 
-<main class="loginAdmin">
-  <form action="/login" method="post">
-    <h1>Sign in to your account</h1>
-    <input type="text" name="email" id="email" placeholder="email" />
-    <input
-      type="password"
-      name="password"
-      id="password"
-      placeholder="password"
-    />
-    <input type="submit" value="login" />
-  </form>
-  <div style="margin-top: 10px; color: #fff">
-    <p>usuario: admin@admin.com</p>
-    <p>password: admin</p>
-  </div>
-</main>
-
-<%- include('../components/layout/bodyEnd.ejs') -%>
